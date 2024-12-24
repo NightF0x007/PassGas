@@ -69,6 +69,12 @@ python3 PassGas.py -c users.csv -o custom_passwords -r 3
 python3 PassGas.py -c users.csv -o passwords -r 3
 ```
 
+If the list is too gassed up, filter it down.
+```
+grep -E '^.{6,}$' master_password_list.txt| grep -E '[A-Z]' | grep -E '[a-z]' | grep -E '[0-9]' | grep -E '([!@#$%^&*].*){2,}' > filtered_usernames.txt
+```
+
+
 ---
 
 ## **Acknowledgments**
