@@ -71,7 +71,12 @@ python3 PassGas.py -c users.csv -o passwords -r 3
 
 If the list is too gassed up, filter it down.
 ```
-grep -E '^.{6,}$' master_password_list.txt| grep -E '[A-Z]' | grep -E '[a-z]' | grep -E '[0-9]' | grep -E '([!@#$%^&*].*){2,}' > filtered_usernames.txt
+grep -E '^.{6,}$' master_password_list.txt| grep -E '[A-Z]' | grep -E '[a-z]' | grep -E '[0-9]' | grep -E '([!@#$%^&*].*){2,}' > filtered_passwords.txt
+```
+
+Usernames from a csv with "firstname,lastname" headers.
+```
+username-anarchy --list-formats | awk '/^[a-z]/ {print $1}' | xargs -I {} username-anarchy --input-file simplified_users.csv --select-format {} > usernames.txt
 ```
 
 ---
