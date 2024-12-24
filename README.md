@@ -1,5 +1,5 @@
 # **PassGas.py**
-Because cracking passwords shouldn't stink!** 🏎️💨  
+**Because cracking passwords shouldn't stink!** 🏎️💨  
 
 ---
 
@@ -74,15 +74,8 @@ If the list is too gassed up, filter it down.
 grep -E '^.{6,}$' master_password_list.txt| grep -E '[A-Z]' | grep -E '[a-z]' | grep -E '[0-9]' | grep -E '([!@#$%^&*].*){2,}' > filtered_usernames.txt
 ```
 
-
----
-
-## **Acknowledgments**
-- ASCII art generated with love for cybersecurity enthusiasts.
-- Created by **NightF0x007**.
-
 ---
 
 ## **Disclaimer**
-This tool is intended for educational purposes only. Misuse of this tool is strictly prohibited.
+This tool is intended for educational purposes.
 
