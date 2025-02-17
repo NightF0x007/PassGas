@@ -1,5 +1,5 @@
 # **PassGas.py**
-**Because cracking passwords shouldn't stink!** 🏎️💨  
+**Gassed Up Password Generator.** 🏎️💨  
 
 ---
 
